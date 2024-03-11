@@ -12,9 +12,9 @@ public class Task3 {
         }
 
         if (userInput >= 0) {
-            System.out.printf("The sum of all numbers from 0 to %d is %d", userInput, sumOfUserInputs);
+            System.out.printf("The sum of all numbers from 0 to %d is %d.", userInput, sumOfUserInputs);
         } else {
-            System.out.printf("The sum of all numbers from %d to 0 is %d", userInput, (sumOfUserInputs * -1));
+            System.out.printf("The sum of all numbers from %d to 0 is %d.", userInput, (sumOfUserInputs * -1));
         }
     }
 }
