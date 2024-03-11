@@ -5,7 +5,7 @@ public class Task4 {
         Scanner scanner = new Scanner(System.in);
         int channel;
         String[] Channels = {
-                "Channel0", "Channel1", "Channel2",
+                "Channel1", "Channel2",
                 "Channel3", "Channel4", "Channel5",
                 "Channel6", "Channel7"
         };
@@ -16,7 +16,7 @@ public class Task4 {
                 if ((channel > 7) || (channel < 0)) {
                     System.out.println("Clicked channel doesn't exist. Please click any channel from 1 to 7.");
                 } else {
-                    System.out.println(Channels[channel]);
+                    System.out.println(Channels[channel - 1]);
                 }
             }
         } while (channel != 0);
