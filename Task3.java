@@ -6,16 +6,16 @@ public class Task3 {
         System.out.print("Please enter a number: ");
         int userInput = scanner.nextInt();
         int sumOfUserInputs = 0;
-        if (userInput >= 0) {
-            for (int i = 0; i <= userInput; i++) {
-                sumOfUserInputs += i;
-            }
-        } else {
-            for (int i = 0; i >= userInput; i--) {
-                sumOfUserInputs += i;
-            }
+
+        for (int i = 0; i <= Math.abs(userInput); i++) {
+            sumOfUserInputs += i;
         }
-        System.out.printf("The sum of all numbers from 0 to %d is %d", userInput, sumOfUserInputs);
+
+        if (userInput >= 0) {
+            System.out.printf("The sum of all numbers from 0 to %d is %d", userInput, sumOfUserInputs);
+        } else {
+            System.out.printf("The sum of all numbers from %d to 0 is %d", userInput, (sumOfUserInputs * -1));
+        }
     }
 }
 
